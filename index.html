@@ -1,78 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cezar Carvalhaes</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href= "assets/css/styles.css">
+    <title>Cezar Carvalhaes | Developer</title>
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/background.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <!-- Fonts/Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/font-mfizz/font-mfizz.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <!-- Local JavaScript -->
+    <script src="assets/javascript/index.js"></script>
 </head>
+
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-            <a class="navbar-brand" href="index.html">Cezar Carvalhaes</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="index.html">About <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
-                </div>
-            </div>
-        </nav>
-    <div class="container">
-        <div class="row">
-            <div class ="col-md-8">
-                <div id="main">
-                    <h2>About Me</h2>
-                    <img id="cezar" class="img-fluid img-thumbnail float-left" alt="Cezar" src="assets/images/cezar_megaphone.jpg">
-                    <p>
-                        My name is Cezar Carvalhaes, and I have a pretty diverse background and very diverse interests. I'm
-                        a native of Sao Paulo, Brazil, since the age of four have lived in: Miami, Vancouver, Toronto, Ottawa,
-                        Detroit, Kalamazoo, Memphis and Richmond, Va (in roughly that order). I am a huge history nerd,
-                        particularly ancient western and early medieval history. I've listened to several weeks' worth of podcast
-                        hours at this point on the subjects. 
-                    </p>
-                    <p>
-                        Despite my love of history, my actual degrees are in Anthropology and 
-                        Philosophy.  My day job involves motivating/helping high schoolers graduate and get what they may be not 
-                        getting on their path to graduation at Armstrong High School. I also coach wrestling at this high school 
-                        and am about to complete my sixth season (fourth at this particular school). My night job involves serving 
-                        beer and giving homebrewing advice over at Final Gravity Brewing/ Original Gravity Homebrewing Supplies. I 
-                        began brewing beer when I was 19 years old, and have loved it since!
-                    </p>
-                    <p>
-                        I also play guitar and enjoy building furniture and/or other fun wooden projects. In 2015, I decided to build
-                        a website to display some of my work. After growing frustrated with the prescribed site builder, I decided to 
-                        learn to code using codecademy. Within a few weeks, I had used what I learned and relaunched 
-                        <a href =http://www.eclecticbromestic.com>Eclectic Bromestic.</a> Since purchasing my house in May 2016, I haven't paid 
-                        any attention to it. I've grown to love coding, and given its much better career outlook then education, I'm 
-                        very excited to take part in this Bootcamp through the University of Richmond.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                    <div id= "connect">
-                            <h3>
-                                Connect With Me
-                            </h3>
-                            <a href="http://github.com/cezarcarvalhaes"><img class="icon" alt="GitHub" src=assets/images/github.png></a>
-                            <a href="https://www.linkedin.com/in/cezar-carvalhaes/"><img class="icon" alt="LinkedIn" src=assets/images/linkedin.png></a>
-                            <a href="https://stackoverflow.com/users/9132636/ccarvalhaes?tab=profile"><img class="icon" alt="StackOverflow" id="stack" src=assets/images/stack_overflow.png></a>
-                    </div>
+    <!-- Home -->
+    <a name="home" />
+    <section id="home">
+        <div id="jumbotron" class="flex-grid align-center">
+            <div id="intro">
+                <img src="assets/img/fam-photo.jpg" class="rounded" />
+                <h1>Hi, I'm Cezar Carvalhaes. </h1>
+                <h1>I'm a full-stack web developer.</h1>
+                <br>
+                <button class="buttons" id="work"> Check out my work
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                </button>
             </div>
         </div>
+
+        <nav id="navbar" class="fullnav">
+            <ul id="nav-wrap">
+                <li id="home-btn">Home</li>
+                <li id="about-btn">About</li>
+                <li id="portfolio-btn">Portfolio</li>
+                <li id="contact-btn">Contact</li>
+                <li id="menu-btn" class="menu" onclick="navBar()">
+                    <i class="fa fa-bars"></i>
+                </li>
+                </div>
+        </nav>
+    </section>
+
+    <!-- About Me -->
+    <a name="about" />
+    <section id="about">
+        <div class="heading">
+            <h1>About</h1>
+            <div class="bar"></div>
+        </div>
+        <div class="flex-grid features-wrap bottom-buffer">
+            <div class="col feature">
+                <div class="feature-icon flex-grid align-center">
+                    <i class="fas fa-mobile-alt fa-5x"></i>
+                </div>
+                <h2>Responsive</h2>
+                <br>
+                <p>Beautiful, functional layouts built for all screen sizes.</p>
+            </div>
+            <div class="col feature">
+                <div class="feature-icon flex-grid align-center">
+                    <i class="fas fa-database fa-5x"></i>
+                </div>
+                <h2>Full Stack Apps</h2>
+                <br>
+                <p> Back-end and Front-end fully developed to create functional feature-rich web apps.</p>
+            </div>
+            <div class="col feature">
+                <div class="feature-icon flex-grid align-center">
+                    <i class="far fa-user fa-5x"></i>
+                </div>
+                <h2>Intuitive UIs</h2>
+                <br>
+                <p>Simple, highly navigable UX/UIs for a streamlined user experience while keeping that "Wow" factor.</p>
+            </div>
+        </div>
+        <div class="skills bottom-buffer">
+            <h1>Skills</h1>
+            <div class="bar"></div>
+            <div class="flex-grid">
+                <div class="col icon">
+                    <i class="icon-html5-alt" style="color:red"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="col icon">
+                    <i class="icon-css3-alt" style="color:blue"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="col icon">
+                    <i class="icon-javascript-alt" style="color:#f7e706dc"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="col icon">
+                    <i class="icon-nodejs" style="color:greenyellow"></i>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="col icon">
+                    <i class="icon-npm" style="color:red"></i>
+                    <h3>NPM</h3>
+                </div>
+                <div class="col icon">
+                    <i class="icon-bootstrap" style="color:purple"></i>
+                    <h3>Bootstrap</h3>
+                </div>
+                <div class="col icon">
+                    <i class="icon-jquery" style="color:blue"></i>
+                    <h3>jQuery</h3>
+                </div>
+                <div class="col icon">
+                    <i class="icon-mysql-alt" style="color:navy"></i>
+                    <h3>MySQL</h3>
+                </div>
+                <div class="col icon">
+                    <i class="devicon-sequelize-plain colored"></i>
+                    <h3>Sequelize</h3>
+                </div>
+                <div class="col icon">
+                    <i class="icon-mongodb" style="color:green"></i>
+                    <h3>MongoDB</h3>
+                </div>
+                <div class="col icon">
+                    <i class="icon-heroku" style="color:purple"></i>
+                    <h3>Heroku</h3>
+                </div>
+                <div class="col icon">
+                    <i class="devicon-express-original colored"></i>
+                    <h3>Express</h3>
+                </div>
+                <div class="col icon">
+                    <i class="devicon-mocha-plain colored"></i>
+                    <h3>Mocha</h3>
+                </div>
+                <div class="col icon">
+                    <i class="devicon-github-plain colored"></i>
+                    <h3>Github</h3>
+                </div>
+            </div>
+        </div>
+        <div class="heading">
+            <h1>About This Guy</h1>
+        </div>
+        <div class="aboutme flex-grid align-center">
+            <div class="thisguy">
+                <img src="assets/img/cis-shirt.jpg" id="my-pic" />
+            </div>
+            <div class="bottom-buffer" id="about-blurb">
+                <br>
+                <p>I'm a full-stack developer based in Richmond, VA. I enjoy making practical, feature rich apps with streamlined
+                    UIs. </p>
+                <p>Let's build something awesome.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Portolio -->
+    <a name="portfolio" />
+    <section id="projects">
+        <div class="heading">
+            <h1>Projects</h1>
+            <div class="bar"></div>
+        </div>
+        <div class="flex-grid bottom-buffer">
+
+            <div class="col flex-grid align-center">
+                <div class="card" id="motivator">
+                    <div class="card-text">
+                        <h3>MOT1V8R</h3>
+                        <p class="hightlight">Full stack app for accomplishing daily goals.</p>
+                        <button class="learn-more" id="motivator-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col flex-grid align-center">
+                <div class="card" id="trailer-park">
+                    <div class="card-text">
+                        <h3>Trailer Park</h3>
+                        <p class="hightlight">What to watch and where to find it.</p>
+                        <button class="learn-more" id="trailerpark-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col flex-grid align-center">
+                <div class="card" id="friendfinder">
+                    <div class="card-text">
+                        <h3>FriendFinder</h3>
+                        <p class="hightlight">Looking for love? Look no further.</p>
+                        <button class="learn-more" id="friendfinder-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col flex-grid align-center">
+                <div class="card" id="eat-da-burger">
+                    <div class="card-text">
+                        <h3>Eat Da Burger</h3>
+                        <p class="hightlight">A full stack burger logging app.</p>
+                        <button class="learn-more" id="eatdaburger-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col flex-grid align-center">
+                <div class="card" id="rps">
+                    <div class="card-text">
+                        <h3>Rock Paper Scissors</h3>
+                        <p class="hightlight">Anonymous multiplayer rock paper scissors.</p>
+                        <button class="learn-more" id="rps-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col flex-grid align-center">
+                <div class="card" id="bamazon">
+                    <div class="card-text">
+                        <h3>Bamazon</h3>
+                        <p class="hightlight">A CLI storefront.</p>
+                        <button class="learn-more" id="bamazon-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col flex-grid align-center">
+                <div class="card" id="hangman-cli">
+                    <div class="card-text">
+                        <h3>Nations of the World Hangman</h3>
+                        <p class="hightlight">Command Line Hangman.</p>
+                        <button class="learn-more" id="hangmancli-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col flex-grid align-center">
+                <div class="card" id="liri">
+                    <div class="card-text">
+                        <h3>LiriBot</h3>
+                        <p class="hightlight">A CLI that returns twitter, movie and spotify data.</p>
+                        <button class="learn-more" id="liri-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col flex-grid align-center">
+                <div class="card" id="dk-rpg">
+                    <div class="card-text">
+                        <h3>Donkey Kong RPG</h3>
+                        <p class="hightlight">An RPG with Donkey Kong characters</p>
+                        <button class="learn-more" id="dkrpg-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col flex-grid align-center">
+                <div class="card" id="wh-trivia">
+                    <div class="card-text">
+                        <h3>Ultimate World History Trivia</h3>
+                        <p class="hightlight">Think you can handle it?</p>
+                        <button class="learn-more" id="whtrivia-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <a name="contact" />
+    <section id="contact">
+        <div class="heading">
+            <h1>Contact</h1>
+            <div class="bar"></div>
+        </div>
+        <div class="flex-grid bottom-buffer">
+            <div class="col flex-grid align-center contact-icon">
+                <a href="mailto:cezarcarvalhaes@gmail.com"> <i class="fas fa-envelope fa-7x">
+                    </i>
+                </a>
+            </div>
+            <div class="col flex-grid align-center contact-icon">
+                <a href="http://github.com/cezarcarvalhaes">
+                    <i class="fab fa-github-square fa-7x"></i>
+                </a>
+            </div>
+            <div class="col flex-grid align-center contact-icon">
+                <a href="https://www.linkedin.com/in/cezar-carvalhaes/">
+                    <i class="fab fa-linkedin fa-7x"></i>
+                </a>
+            </div>
+            <div class="col flex-grid align-center contact-icon">
+                <a href="https://stackoverflow.com/users/9132636/ccarvalhaes?tab=profile">
+                    <i class="fab fa-stack-overflow fa-7x"></i>
+                </a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <i class="fas fa-arrow-alt-circle-up" id="to-home"></i>
+        <p>Copyright © 2018 Cezar Carvalhaes </p>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <div id="demo-pic">
+            </div>
+            <div id="info-box">
+                <h2 id="info-header">MOT1V8R</h2>
+                <div class="bar"></div>
+                <p id ="info-text">MOT1V8R is a full stack app for establishing daily habits and reaching your goals. Set a daily reminder and
+                    receive a text message reminding you of the tasks you want to accomplish. Track your progress online
+                    to help motivate you to success!
+                </p>
+                <br>
+                <div class="flex-grid">
+                    <a id="weblink" href="https://secure-tor-11865.herokuapp.com/">
+                        <button class="info-btn"><i class="fas fa-external-link-alt"></i> Website</button>
+                    </a>
+                    <a id="gitlink" href ="https://github.com/cezarcarvalhaes/m0t1v8r">
+                    <button class="info-btn">
+                        <i class="devicon-github-plain colored"></i> Git Hub</button>
+                    </a>
+                </div>
+            </div>
+            <span class="close">&times;</span>
+        </div>
     </div>
-    </div>
-    
-    <div id="footer">
-        <div id="preFooter"></div>
-        <h6>&copy; Copyright 2018 Cezar Carvalhaes </h6>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        //Click handler attached in HTML above
+        // When user clicks icon on mobile, shows nav links
+        function navBar() {
+            var nav = document.getElementById("navbar");
+            if (nav.className === "fullnav") {
+                nav.className += " responsive";
+            } else {
+                nav.className = "fullnav";
+            }
+        }
+        // When the user scrolls the page, execute stickyNav 
+        window.onscroll = function () { stickyNav() };
+
+        // Get the navbar
+        var nav = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = nav.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function stickyNav() {
+            if (window.pageYOffset >= sticky) {
+                nav.classList.add("sticky")
+            } else {
+                nav.classList.remove("sticky");
+            }
+        }
+    </script>
+
+
 </body>
+
 </html>
