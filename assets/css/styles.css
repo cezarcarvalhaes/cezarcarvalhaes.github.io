@@ -347,16 +347,21 @@ footer .fas {
 .info-btn {
     margin: 3px;
     font-size: 12pt;
-    background: #fc0303;
+    background: #f10755;
     height: 2.5em;
     letter-spacing: 0.5px;
     border-radius: 4px;
-    color: #444;
+    color: #f5f5f5ec;
     padding: 2px 8px;
+}
+
+.info-btn .fas {
+    color: black;
 }
 
 .info-btn:hover {
     background: #fefefe;
+    color:#222
 }
 
 .right {
