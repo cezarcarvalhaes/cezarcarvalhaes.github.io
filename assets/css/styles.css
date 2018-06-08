@@ -236,6 +236,9 @@ font-size: 4em;
 #friendfinder {
     background-image: url("../img/friendfinder.png");
 }
+#netscrape{
+    background-image: url("../img/netscrape.png");
+}
 #eat-da-burger {
     background-image: url("../img/foo-burger.jpg");
 }
@@ -381,11 +384,11 @@ footer .fas {
       float: right;
       display: block;
     }
-    #navbar.responsive {position: relative;}
+    /* #navbar.responsive {position: relative;} */
     #navbar.responsive li.menu {
-      position: absolute;
+      /* position: absolute;
       right: 0;
-      top: 0;
+      top: 0; */
     }
     #navbar.responsive li {
       float: none;

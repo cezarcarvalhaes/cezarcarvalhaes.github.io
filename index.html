@@ -196,6 +196,16 @@
             </div>
 
             <div class="col flex-grid align-center">
+                <div class="card" id="netscrape">
+                    <div class="card-text">
+                        <h3>Netscrape</h3>
+                        <p class="hightlight">A News-scraping site that pulls articles from AllSides.com. Developed with Mongoose and Cheerio.</p>
+                        <button class="learn-more" id="netscrape-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col flex-grid align-center">
                 <div class="card" id="friendfinder">
                     <div class="card-text">
                         <h3>FriendFinder</h3>
@@ -344,11 +354,11 @@
         //Click handler attached in HTML above
         // When user clicks icon on mobile, shows nav links
         function navBar() {
-            var nav = document.getElementById("navbar");
-            if (nav.className === "fullnav") {
-                nav.className += " responsive";
+            
+            if ($("#navbar").hasClass("responsive")) {
+                $("#navbar").removeClass("responsive");
             } else {
-                nav.className = "fullnav";
+                $("#navbar").addClass("responsive");
             }
         }
         // When the user scrolls the page, execute stickyNav 

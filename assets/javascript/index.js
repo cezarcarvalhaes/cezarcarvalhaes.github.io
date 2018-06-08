@@ -46,6 +46,9 @@ $(document).ready(function () {
         else if (this.id === "trailerpark-btn"){
             displayTrailerPark();
         }
+        else if (this.id === "netscrape-btn"){
+            displayNetscrape();
+        }
         else if (this.id === "friendfinder-btn"){
             displayFriendFinder();
         }
@@ -180,6 +183,15 @@ $(document).ready(function () {
         $("#info-text").text("A hangman game for the command line using Nations of the World.")
         $("#weblink").attr("href", "https://cezarcarvalhaes.github.io/ultimate-wh-trivia")
         $("#gitlink").attr("href", "https://github.com/cezarcarvalhaes/ultimate-wh-trivia")
+    }
+    function displayNetscrape() {
+        $("#demo-pic").css({
+            'background-image': 'url(assets/img/netscrape1.png)',
+        });
+        $("#info-header").text("Netscrape")
+        $("#info-text").text("A news site developed with Mongoose and Cheerio that scrapes articles from Allsides.com. Users can save articles and post comments.")
+        $("#weblink").attr("href", "https://cezarcarvalhaes.github.io/netscrape")
+        $("#gitlink").attr("href", "https://netscrape-navigator.herokuapp.com/")
     }
     
 
