@@ -191,7 +191,7 @@ $(document).ready(function () {
         $("#info-header").text("Netscrape")
         $("#info-text").text("A news site developed with Mongoose and Cheerio that scrapes articles from Allsides.com. Users can save articles and post comments.")
         $("#weblink").attr("href", "https://netscrape-navigator.herokuapp.com/")
-        $("#gitlink").attr("href", "https://cezarcarvalhaes.github.io/netscrape")
+        $("#gitlink").attr("href", "https://github.com/cezarcarvalhaes/netscrape")
     }
     
 
