@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    //On page load:
+    $(".intro-heading").hide();
+    setTimeout(zoomHeading, 2000)
 
     //Page scroll click handlers
     $("#work").on("click", function () {
@@ -49,6 +52,9 @@ $(document).ready(function () {
         else if (this.id === "netscrape-btn"){
             displayNetscrape();
         }
+        else if (this.id === "memberprez-btn"){
+            displayMemberPrez();
+        }
         else if (this.id === "friendfinder-btn"){
             displayFriendFinder();
         }
@@ -76,6 +82,11 @@ $(document).ready(function () {
         //Makes the modal appear
         $("#myModal").css("display", "block");
     });
+
+    //Animated heading function
+    function zoomHeading() {
+        $(".intro-heading").slideDown()
+    }
 
     // When the user clicks on <span> (x), close the modal
     $(".close").on("click", function () {
@@ -109,6 +120,16 @@ $(document).ready(function () {
         $("#info-text").text("What to watch and where to find it. With Trailer Park, users can see the what top movies and tv shows are available, watch their trailers and find them in theaters or through a streaming platform. ")
         $("#weblink").attr("href", "https://cezarcarvalhaes.github.io/Trailer-Park/")
         $("#gitlink").attr("href", "https://github.com/cezarcarvalhaes/Trailer-Park")
+    }
+
+    function displayMemberPrez() {
+        $("#demo-pic").css({
+            'background-image': 'url(assets/img/memberprez1.png)',
+        });
+        $("#info-header").text("Member Prez")
+        $("#info-text").text("A US President themed memory game built with React.")
+        $("#weblink").attr("href", "https://cezarcarvalhaes.github.io/member-prez/")
+        $("#gitlink").attr("href", "https://github.com/cezarcarvalhaes/member-prez")
     }
 
     function displayFriendFinder() {

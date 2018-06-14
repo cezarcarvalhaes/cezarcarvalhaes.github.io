@@ -229,6 +229,10 @@ font-size: 4em;
     background-image: url("../img/motivator.png");
 }
 
+#member-prez {
+    background-image: url("../img/memberprez.png");
+}
+
 #trailer-park {
     background-image: url("../img/trailer-park.png");
     background-position-x: left;
