@@ -233,6 +233,11 @@ font-size: 4em;
     background-image: url("../img/memberprez.png");
 }
 
+#nyt {
+    background-image: url("../img/nyt.png");
+}
+
+
 #trailer-park {
     background-image: url("../img/trailer-park.png");
     background-position-x: left;

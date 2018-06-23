@@ -55,6 +55,9 @@ $(document).ready(function () {
         else if (this.id === "memberprez-btn"){
             displayMemberPrez();
         }
+        else if (this.id === "nyt-btn"){
+            displayNytSearch();
+        }
         else if (this.id === "friendfinder-btn"){
             displayFriendFinder();
         }
@@ -130,6 +133,16 @@ $(document).ready(function () {
         $("#info-text").text("A US President themed memory game built with React.")
         $("#weblink").attr("href", "https://cezarcarvalhaes.github.io/member-prez/")
         $("#gitlink").attr("href", "https://github.com/cezarcarvalhaes/member-prez")
+    }
+
+    function displayNytSearch() {
+        $("#demo-pic").css({
+            'background-image': 'url(assets/img/nyt1.png)',
+        });
+        $("#info-header").text("Member Prez")
+        $("#info-text").text("A full stack React app that searches the New York Times Article database. Articles can be saved in a Mongo DB.")
+        $("#weblink").attr("href", "https://cezarcarvalhaes.github.io/nytreact/")
+        $("#gitlink").attr("href", "https://fathomless-wildwood-60995.herokuapp.com/")
     }
 
     function displayFriendFinder() {
