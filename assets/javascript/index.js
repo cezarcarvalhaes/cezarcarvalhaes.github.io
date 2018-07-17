@@ -1,8 +1,10 @@
 $(document).ready(function () {
 
     //On page load:
-    $(".intro-heading").hide();
-    setTimeout(zoomHeading, 2000)
+    
+    setTimeout(firstAnimation, 1000)
+    setTimeout(secondAnimation, 2500)
+    setTimeout(thirdAnimation, 4000)
 
     //Page scroll click handlers
     $("#work").on("click", function () {
@@ -46,6 +48,9 @@ $(document).ready(function () {
         if (this.id === "motivator-btn"){
             displayMotivator();
         }
+        else if (this.id === "tp2-btn"){
+            displayTP2();
+        }
         else if (this.id === "trailerpark-btn"){
             displayTrailerPark();
         }
@@ -87,8 +92,18 @@ $(document).ready(function () {
     });
 
     //Animated heading function
-    function zoomHeading() {
-        $(".intro-heading").slideDown()
+    function firstAnimation() {
+        $("#heading1").animate({top:"+=425px"}, "slow");
+    }
+
+    function secondAnimation() {
+        $("#heading2").show();
+        $("#heading2").animate({top:"-=675px"}, "slow");
+        $(".rounded").animate({top:"+=375px"}, "slow");
+    }
+
+    function thirdAnimation () {
+        $("#work").fadeIn('slow')
     }
 
     // When the user clicks on <span> (x), close the modal
@@ -105,6 +120,17 @@ $(document).ready(function () {
     });
 
     //Functions populate modals with appropriate image, text and links.
+    function displayTP2() {
+        $("#demo-pic").css({
+            'background-image': 'url("assets/img/tp2-1.png"',
+        });
+        $("#info-header").text("Trailer Park 2.0")
+        $("#info-text").text("What to watch and where to find it. With Trailer Park, users can see the what top movies and tv shows are available, watch their trailers and find them in theaters or through a streaming platform. ")
+        $("#weblink").attr("href", "https://trailerparkagain.herokuapp.com/")
+        $("#gitlink").attr("href", "https://github.com/cezarcarvalhaes/TrailerPark2.0")
+    }
+
+
     function displayMotivator() {
         $("#demo-pic").css({
             'background-image': 'url("assets/img/motivator1.png"',

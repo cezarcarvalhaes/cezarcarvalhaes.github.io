@@ -28,10 +28,6 @@ a {
     padding: 1em;   
 }
 
-#jumbotron {
-    padding: 0.5em;
-}
-
 .align-center {
     align-items: center;
 }
@@ -61,13 +57,26 @@ a {
 }
 
 #intro {
-    text-shadow: 1px 1px #222
+    text-shadow: 1px 1px #222;
+    padding: 0.5em;
 }
 
+#heading1 {
+    position: relative;
+    top: -300px;
+}
+
+#heading2 {
+    display: none;
+    position: relative;
+    top: 800px;
+}
 
 .rounded {
     border-radius: 50%;
-    width: 30%;
+    width: 200px;
+    position: relative;
+    top: -250px;
 }
 
 .buttons {
@@ -119,6 +128,12 @@ a {
     width: 100%
 }
 
+#work {
+    position: relative;
+    top: 170px;
+    display: none;
+}
+
 #work:hover {
     -webkit-transition: 1s ease-in;
     -moz-transition: 1s ease-in;
@@ -149,8 +164,8 @@ a {
     padding: .75em;
 }
 
-.feature p{
-    margin-bottom: 2em;
+.feature {
+    margin: 0.5em 1em 2em 1em
 }
 
 .feature-icon {
@@ -215,10 +230,18 @@ font-size: 4em;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    line-height: 1.5
 }
 
 .card-text .learn-more {
-    width: 50%;
+    margin: 5px;
+    font-size: 12pt;
+    background: #f10755;
+    height: 2.5em;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    color: #f5f5f5ec;
+    padding: 2px 8px;
 }
 
 .card:hover {
@@ -236,8 +259,10 @@ font-size: 4em;
 #nyt {
     background-image: url("../img/nyt.png");
 }
-
-
+#trailerpark2 {
+    background-image: url("../img/trailerpark2.png");
+    background-position-x: left;
+}
 #trailer-park {
     background-image: url("../img/trailer-park.png");
     background-position-x: left;
@@ -402,6 +427,10 @@ footer .fas {
     #navbar.responsive li {
       float: none;
       display: block;
+    }
+
+    h1 {
+        font-size: 1.5em;
     }
     #my-pic {
         width: 70%;

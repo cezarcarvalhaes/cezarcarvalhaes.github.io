@@ -29,11 +29,11 @@
     <!-- Home -->
     <a name="home" />
     <section id="home">
-        <div id="jumbotron" class="flex-grid align-center">
-            <div id="intro">
+        <div id="intro">
+            <div>
                 <img src="assets/img/fam-photo.jpg" class="rounded" />
-                <h1 class = "intro-heading">Hi, I'm Cezar Carvalhaes. </h1>
-                <h1 class = "intro-heading">I'm a full-stack web developer.</h1>
+                <h1 class="intro-heading" id="heading1">Hi, I'm Cezar Carvalhaes. </h1>
+                <h1 class="intro-heading" id="heading2">I'm a full-stack web developer.</h1>
                 <br>
                 <button class="buttons" id="work"> Check out my work
                     <i class="far fa-arrow-alt-circle-right"></i>
@@ -108,6 +108,10 @@
                     <h3>Node.js</h3>
                 </div>
                 <div class="col icon">
+                    <i class="icon-reactjs" style="color:blue"></i>
+                    <h3>React</h3>
+                </div>
+                <div class="col icon">
                     <i class="icon-npm" style="color:red"></i>
                     <h3>NPM</h3>
                 </div>
@@ -174,6 +178,16 @@
             <div class="bar"></div>
         </div>
         <div class="flex-grid bottom-buffer">
+
+            <div class="col flex-grid align-center">
+                <div class="card" id="trailerpark2">
+                    <div class="card-text">
+                        <h3>Trailer Park React</h3>
+                        <p class="hightlight">What to watch and where to find it - React Version.</p>
+                        <button class="learn-more" id="tp2-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
 
             <div class="col flex-grid align-center">
                 <div class="card" id="motivator">
@@ -313,7 +327,8 @@
         </div>
         <div class="flex-grid bottom-buffer">
             <div class="col flex-grid align-center contact-icon">
-                <a href="mailto:cezarcarvalhaes@gmail.com"> <i class="fas fa-envelope fa-7x">
+                <a href="mailto:cezarcarvalhaes@gmail.com">
+                    <i class="fas fa-envelope fa-7x">
                     </i>
                 </a>
             </div>
@@ -351,18 +366,19 @@
             <div id="info-box">
                 <h2 id="info-header">MOT1V8R</h2>
                 <div class="bar"></div>
-                <p id ="info-text">MOT1V8R is a full stack app for establishing daily habits and reaching your goals. Set a daily reminder and
+                <p id="info-text">MOT1V8R is a full stack app for establishing daily habits and reaching your goals. Set a daily reminder and
                     receive a text message reminding you of the tasks you want to accomplish. Track your progress online
                     to help motivate you to success!
                 </p>
                 <br>
                 <div class="flex-grid">
                     <a id="weblink" href="https://secure-tor-11865.herokuapp.com/">
-                        <button class="info-btn"><i class="fas fa-external-link-alt"></i> Website</button>
+                        <button class="info-btn">
+                            <i class="fas fa-external-link-alt"></i> Website</button>
                     </a>
-                    <a id="gitlink" href ="https://github.com/cezarcarvalhaes/m0t1v8r">
-                    <button class="info-btn">
-                        <i class="devicon-github-plain colored"></i> Git Hub</button>
+                    <a id="gitlink" href="https://github.com/cezarcarvalhaes/m0t1v8r">
+                        <button class="info-btn">
+                            <i class="devicon-github-plain colored"></i> Git Hub</button>
                     </a>
                 </div>
             </div>
@@ -374,7 +390,7 @@
         //Click handler attached in HTML above
         // When user clicks icon on mobile, shows nav links
         function navBar() {
-            
+
             if ($("#navbar").hasClass("responsive")) {
                 $("#navbar").removeClass("responsive");
             } else {
@@ -382,7 +398,9 @@
             }
         }
         // When the user scrolls the page, execute stickyNav 
-        window.onscroll = function () { stickyNav() };
+        window.onscroll = function () {
+            stickyNav()
+        };
 
         // Get the navbar
         var nav = document.getElementById("navbar");
