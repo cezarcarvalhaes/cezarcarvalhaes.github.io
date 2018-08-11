@@ -165,10 +165,10 @@ $(document).ready(function () {
         $("#demo-pic").css({
             'background-image': 'url(assets/img/nyt1.png)',
         });
-        $("#info-header").text("Member Prez")
+        $("#info-header").text("New York Times Article Search")
         $("#info-text").text("A full stack React app that searches the New York Times Article database. Articles can be saved in a Mongo DB.")
-        $("#weblink").attr("href", "https://cezarcarvalhaes.github.io/nytreact/")
-        $("#gitlink").attr("href", "https://fathomless-wildwood-60995.herokuapp.com/")
+        $("#weblink").attr("href", "https://fathomless-wildwood-60995.herokuapp.com/")
+        $("#gitlink").attr("href", "https://github.com/cezarcarvalhaes/nytreact")
     }
 
     function displayFriendFinder() {

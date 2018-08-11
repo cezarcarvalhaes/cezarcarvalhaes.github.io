@@ -339,12 +339,14 @@ footer .fas {
 .modal-content {
     text-align: center;
     background-color: #fefefe;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
     padding: 20px;
     border: 1px solid #888;
     width: 50%; 
-    height: 95vh;
+    height: 90vh;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* The Close Button */
@@ -353,7 +355,9 @@ footer .fas {
     float: right;
     font-size: 50px;
     font-weight: bold;
-    margin-top: -25px;
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
 }
 
 .close:hover,
@@ -455,5 +459,18 @@ footer .fas {
     .modal-content {
         width: 80%;
         overflow: auto; 
+    }
+
+    #info-box {
+        margin: 2% 0;
+    }
+
+    #info-box h2 {
+        font-size: 1.5em;
+        margin-top: 2%;
+    }
+
+    #demo-pic {
+        height: 35%;
     }
   }
